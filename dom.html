@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>'margin-left' + 'border-left-width' + 'padding-left' + 'width' + 'padding-right' + 'border-right-width' + 'margin-right' = width of your screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ontouchstart="">
+    <div class="m-left"></div><div class="box">
+        <div class="m-left"></div><div class="box">
+            <div class="m-left"></div><div class="box">
+                <div class="m-left"></div><div class="box">
+                    <div id="b-image">
+                        <p><strong><span class="block-level">'margin-left'</span> + <span class="block-level">'border-left-width'</span> + <span class="block-level">'padding-left'</span> + <span class="block-level">'width'</span> + <span class="block-level">'padding-right'</span> + <span class="block-level">'border-right-width'</span> + <span class="block-level">'margin-right'</span> = <span class="block-level">width of your screen</span></strong></p>
+                        <figure>
+                            <h1>Block-level, non-replaced elements in normal flow</h1>
+                            <p>If 'left' or 'right' are given as 'auto', their computed value is 0. The following constraints must hold between the other properties:</p>
+                            <blockquote cite="https://www.w3.org/TR/2003/WD-CSS21-20030128/visudet.html#q6">'margin-left' + 'border-left-width' + 'padding-left' + 'width' + 'padding-right' + 'border-right-width' + 'margin-right' = width of containing block</blockquote>
+                            <p>(If the border style is 'none', use '0' as the border width.) If all of the above have a specified value other than 'auto', the values are said to be "over-constrained" and one of the computed values will have to be different from its specified value. If the 'direction' property has the value 'ltr', the specified value of 'margin-right' is ignored and the value is computed so as to make the equality true. If the value of 'direction' is 'rtl', this happens to 'margin-left' instead.</p>
+                            <p>If there is exactly one value specified as 'auto', its computed value follows from the equality.</p>
+                            <p>If 'width' is set to 'auto', any other 'auto' values become '0' and 'width' follows from the resulting equality.</p>
+                            <p>If both 'margin-left' and 'margin-right' are 'auto', their computed values are equal. This horizontally centers the element with respect to the edges of the containing block.</p>
+                        </figure>
+                        <figcaption>
+                            <cite>
+                                World Wide Web Consortium. (2003). Visual formatting model details. W3C Working Draft.<br>
+                                Source: <a href="https://www.w3.org/TR/2003/WD-CSS21-20030128/visudet.html#q6">https://www.w3.org/TR/2003/WD-CSS21-20030128/visudet.html#q6</a> (Accessed January 31, 2026)
+                            </cite>
+                        </figcaption>
+                    </div>
+                </div><div class="m-right"></div>
+            </div><div class="m-right"></div>
+        </div><div class="m-right"></div>
+    </div><div class="m-right"></div>
+    <script src="script.js"></script>
+</body>
+</html>
